@@ -1,0 +1,178 @@
+.portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.portfolio-wrap img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.portfolio .portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio .portfolio-wrap img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: #2F6FDB;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 48px;
+  height: 48px;
+  border-top: 3px solid #38BDF8;
+  border-left: 3px solid #38BDF8;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  width: 48px;
+  height: 48px;
+  border-bottom: 3px solid #38BDF8;
+  border-right: 3px solid #38BDF8;
+}
+
+.portfolio-info h4 {
+  color: #F8FAFC;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.portfolio-links a {
+  color: #38BDF8;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.portfolio-links a:hover {
+  color: #2563EB;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+.modal-contents {
+  animation: modalSlideIn 0.3s ease;
+  border: 1px solid #E5E7EB;
+  background: #FFFFFF;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.description-item:hover {
+  background-color: #F8FAFC !important;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background-color: #EFF6FF !important;
+  border-color: #2563EB !important;
+  color: #2563EB !important;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    margin: 1rem;
+  }
+  
+  .modal-header {
+    padding: 1rem 1.5rem !important;
+  }
+  
+  .modal-body {
+    padding: 1.5rem !important;
+  }
+  
+  .tech-tag {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem !important;
+  }
+}
+
+.portfolio-wrap {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.portfolio-wrap:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.15) !important;
+}
+
+@media(max-width:560px) {
+  .project-box{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
