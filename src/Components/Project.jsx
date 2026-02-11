@@ -100,11 +100,8 @@ function Project() {
               />
               <div className="portfolio-info">
                 <div className="portfolio-links">
-<<<<<<< HEAD
-                   <Link to="/">
-=======
                  <Link>
->>>>>>> cdb1c31 (project icon, contact page design)
+
   <i className="bx bx-info-circle"></i>
 </Link>
                 </div>
@@ -128,11 +125,8 @@ function Project() {
               />
               <div className="portfolio-info">
                 <div className="portfolio-links">
-<<<<<<< HEAD
-                     <Link to="/">
-=======
+
                     <Link>
->>>>>>> cdb1c31 (project icon, contact page design)
   <i className="bx bx-info-circle"></i>
 </Link>
                 </div>
@@ -156,11 +150,8 @@ function Project() {
               />
               <div className="portfolio-info">
                 <div className="portfolio-links">
-<<<<<<< HEAD
-                    <Link to="/">
-=======
+
                      <Link>
->>>>>>> cdb1c31 (project icon, contact page design)
   <i className="bx bx-info-circle"></i>
 </Link>
                 </div>
